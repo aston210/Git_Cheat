@@ -1,0 +1,27 @@
+# This is a cheat sheet of Git
+
+# git remote -v      --- To check whether sync with git or not  
+
+
+
+# Now Push the changes to Git by following below commands
+
+
+# git add yourfilename         --- to add file for stagged
+# git add .        ---to add all the files present to stagged
+
+# git commit -m "Your commit message"     --to add stagged files to commit 
+
+# git push origin main
+
+
+
+
+# If prompted for a username/password:
+
+
+# Username: Your GitHub username
+
+# Password: Paste the PAT
+
+# If you want to connect without sharing password then use the following step s
