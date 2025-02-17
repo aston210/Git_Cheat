@@ -8,7 +8,7 @@
 
 
 # git add yourfilename         --- to add file for stagged
-# git add .        ---to add all the files present to stagged
+# git add .        ---to add all the files present to stagged if necessary
 
 # git commit -m "Your commit message"     --to add stagged files to commit 
 
@@ -24,4 +24,11 @@
 
 # Password: Paste the PAT
 
-# If you want to connect without sharing password then use the following step s
+# If you want to connect without sharing password then use the following step 
+
+git remote -v 
+
+git remote add origin your_repository_url
+
+git remote set-url origin PAT_git_url_of repository   ---- You can add this in next correct format https://PAT@github.com/aston210/Git_Cheat.git
+
