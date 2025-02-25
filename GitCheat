@@ -1,24 +1,26 @@
 # This is a cheat sheet of Git
 
-# git remote -v      --- To check whether sync with git or not  
+Mandate: go to your directory where you already added git init and also the directory where you want to add/push or clone the changes to belonging repository 
+
+  git remote -v      --- To check whether sync with git or not  
 
 
 
 # Now Push the changes to Git by following below commands
 
 
-# git add yourfilename         --- to add file for stagged
-# git add .        ---to add all the files present to stagged if necessary
+  git add yourfilename         --- to add file for stagged
+  
+  git add .        ---to add all the files present to stagged if necessary
 
-# git commit -m "Your commit message"     --to add stagged files to commit 
+  git commit -m "Your commit message"     --to add stagged files to commit 
 
-# git push origin main
+  git push origin main
 
 
 
 
 # If prompted for a username/password:
-
 
 # Username: Your GitHub username
 
@@ -30,7 +32,46 @@ git remote -v
 
 git remote add origin your_repository_url
 
-git remote set-url origin PAT_git_url_of repository   ---- You can add this in next correct format https://PAT@github.com/aston210/Git_Cheat.git
+git remote add origin https://YOUR_GITHUB_USERNAME:PAT@github.com/YOUR_GITHUB_USERNAME/REPO_NAME.git ---- You can add this in next correct format https://PAT@github.com/aston210/Git_Cheat.git
 
 
-Hi Akash
+
+# If you want to create and add other files then once more use following commands
+  
+  git add filename
+
+  git commit -m "commit message to display on screen"
+
+# If youwant to clone repository to your local 
+
+  git clone https://YOUR_GITHUB_USERNAME:PAT@github.com/YOUR_GITHUB_USERNAME/REPO_NAME.git
+
+
+
+
+
+# If you want to use ssh-keygen then commands are as follows:
+
+  ssh-keygen   ---create the ssh key if exist then skip this step or you can overwrite it
+  
+  ls   --- here you can see your public key and private key
+
+  cat id_your_public_key  --- paste pulic key having .pub file extension
+
+# Now go to git > setting > ssh and GPG keys and paste your displayed key i.e., output of cat id_publickey.pub and save it
+
+  git remote -v   ---To check whether sync with git or not
+
+  git remote set-url origin paste_your_repository_ssh_url   --- go to git repository and copy ssh url and paste it
+
+  git status
+
+# If you want to create and add other files then once more use following commands
+  
+  git add filename
+
+  git commit -m "commit message to display on screen"
+
+# Now you can push the changes by following single step
+  git push
+  
